@@ -12,7 +12,7 @@ Vect vect1, vect2, vect3;
 	vect1 = arr1;
 	vect2 = arr2;
 	m = vect1 * vect2;
-	if ((m.num() == 9) && (m.din() == 16))
+	if ((m.num() == 9) && (m.den() == 16))
 		cout << "Autotest sdan" << endl;
 	else
 		cout << "Autotest provalen" << endl;
