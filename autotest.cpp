@@ -1,3 +1,6 @@
+#include "CRat.h"
+#include "Vect.h"
+
 void autotest(void) {
 Vect vect1, vect2, vect3;
 	CRat arr1[LENGTH];
@@ -6,7 +9,7 @@ Vect vect1, vect2, vect3;
 	CRat a(1, 2);
 	CRat b(2, 3);
 	CRat c(1, 2);
-	CRatb d(3, 4);
+	CRat d(3, 4);
 	arr1[0] = a; arr1[1] = b;
 	arr2[0] = c; arr2[1] = d;
 	vect1 = arr1;
