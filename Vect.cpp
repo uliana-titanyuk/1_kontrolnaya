@@ -1,4 +1,4 @@
-#include "Func.h"
+
 #include "CRat.h"
 #include "Vect.h"
 Vect Vect :: operator+(const Vect& b) {
