@@ -1,12 +1,10 @@
-  
-
 #include "CRat.h"
 #include "Vect.h"
 
-int Crat :: GetDen() const {
+int CRat :: GetDen() const {
 	return den;
 };
-int Crat :: GetNum() const {
+int CRat :: GetNum() const {
 	return num;
 };
 
