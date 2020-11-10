@@ -1,7 +1,7 @@
   
 #include "Func.h"
 #include "CRat.h"
-#include "CVectRat.h"
+#include "Vect.h"
 
 CRat CRat :: operator+(const CRat& b) {
 	CRat m;
@@ -29,6 +29,7 @@ CRat& CRat :: operator=(const CRat& b) {
 	den = b.GetDen();
 	return *this;
 };
+
 
 void CRat :: print() {
 		cout << "( " << num << " / " << den << " )";
