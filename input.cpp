@@ -1,3 +1,6 @@
+
+#include "CRat.h"
+#include "Vect.h"
 Vect input() {
 	CRat arr[LENGTH];
 	int num, den;
