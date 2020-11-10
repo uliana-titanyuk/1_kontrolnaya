@@ -1,6 +1,9 @@
+
 #pragma once
-#include <iostream>
+#include "CRat.h"
+#include "Vect.h"
 #include <string>
+#include <iostream>
 #include <algorithm> 
 #include <stdio.h>
 #include <math.h>
@@ -29,9 +32,10 @@ public:
 	Vect operator+(const Vect& b);
   Vect operator-(const Vect& b);
 	Vect Conjugate();
-	CRat operator*(Vect& b);
+	CRat operator*(const Vect& b);
 	void print();
 };
 Vect input(void);
 void raschet(void);
 void autotest(void);
+
