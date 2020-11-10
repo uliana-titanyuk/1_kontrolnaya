@@ -5,7 +5,9 @@
 #include <stdio.h>
 #include <math.h>
 #include "CRat.h"
+#define LENGTH 4
 using namespace std;
+
 
 
 class Vect {
