@@ -1,5 +1,5 @@
   
-#include "Func.h"
+
 #include "CRat.h"
 #include "Vect.h"
 
