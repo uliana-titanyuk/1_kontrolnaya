@@ -2,43 +2,43 @@
 #include "CRat.h"
 #include "Vect.h"
 Vect Vect :: operator+(const Vect& b) {
-	Vect m(size);
-	for (int i = 0; i < size; i++) {
-		m.arr[i] = arr[i] + b.arr[i];
+	Vect m;
+	for (int i = 0; i < LENGTH; i++) {
+		m.a[i] = a[i] + b.a[i];
 	}
 	return m;
 };
 
 Vect Vect :: operator-(const Vect& b) {
-	Vect m(size);
-	for (int i = 0; i < size; i++) {
-		m.arr[i] = arr[i] - b.arr[i];
+	Vect m;
+	for (int i = 0; i < LENGTH; i++) {
+		m.a[i] = a[i] - b.a[i];
 	}
 	return m;
-};
 
 CRat Vect :: operator*(const Vect& b) {
-	Vect m(size);
-	CRat a;
-	for (int i = 0; i < size; i++) {
-		a = a + arr[i] * b.arr[i];
+	Vect m;
+	CRat b;
+	for (int i = 0; i < LENGTH; i++) {
+		b = m + this->a[i] * b.a[i];
 	}
-	return a;
-};
+	return b;
 
 Vect& Vect :: operator=(const Vect& b) {
-	for (int i = 0; i < size; i++) {
-		arr[i] = b.arr[i];
+	for (int i = 0; i < LENGTH; i++) {
+		this->a[i] = b.a[i];
 	}
-	return *this;
-};
+	return *this;   
 
 void Vect::print() {
 	cout << "(";
-	for (int i = 0; i < size - 1; i++) {
-		arr[i].print();
-		cout << " , ";
+	for (int i = 0; i < LENGTH - 1; i++) {
+		m = a[i];
+		m.print();
+		cout << ",";
 	}
-	arr[size - 1].print();
+	m = a[LENGTH - 1];
+	m.print();
 	cout << ")\n";
+};
 };
