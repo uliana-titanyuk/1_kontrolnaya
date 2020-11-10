@@ -3,6 +3,13 @@
 #include "CRat.h"
 #include "Vect.h"
 
+int Crat :: GetDen() const {
+	return den;
+};
+int Crat :: GetNum() const {
+	return num;
+};
+
 CRat CRat :: operator+(const CRat& b) {
 	CRat m;
 	m.num = this->num * b.GetDen() + b.GetNum() * this->den;
