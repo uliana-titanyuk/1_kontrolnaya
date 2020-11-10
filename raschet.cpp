@@ -1,4 +1,6 @@
-#include "header.h"
+
+#include "CRat.h"
+#include "Vect.h"
 
 void raschet() {
 	Vect vect1, vect2, vect3;
