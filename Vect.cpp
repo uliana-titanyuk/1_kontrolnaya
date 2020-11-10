@@ -1,6 +1,8 @@
 
 #include "CRat.h"
 #include "Vect.h"
+
+
 Vect Vect :: operator+(const Vect& b) {
 	Vect m;
 	for (int i = 0; i < LENGTH; i++) {
@@ -15,23 +17,26 @@ Vect Vect :: operator-(const Vect& b) {
 		m.a[i] = a[i] - b.a[i];
 	}
 	return m;
+};
 
-CRat Vect :: operator*(const Vect& b) {
-	Vect m;
-	CRat b;
+   CRat Vect :: operator*(const Vect& b) {
+	CRat s;
 	for (int i = 0; i < LENGTH; i++) {
-		b = m + this->a[i] * b.a[i];
+		s = s + this->a[i] * b.a[i];
 	}
-	return b;
+	return s;
+   };
 
 Vect& Vect :: operator=(const Vect& b) {
 	for (int i = 0; i < LENGTH; i++) {
 		this->a[i] = b.a[i];
 	}
-	return *this;   
+	return *this;  
+};
 
 void Vect::print() {
 	cout << "(";
+	CRat m;
 	for (int i = 0; i < LENGTH - 1; i++) {
 		m = a[i];
 		m.print();
@@ -40,5 +45,4 @@ void Vect::print() {
 	m = a[LENGTH - 1];
 	m.print();
 	cout << ")\n";
-};
 };
