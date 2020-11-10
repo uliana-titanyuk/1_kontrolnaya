@@ -1,11 +1,11 @@
 Vect input() {
 	CRat arr[LENGTH];
-	int x, y;
+	int num, den;
 	for (int i = 0; i < LENGTH; i++) {
 		cout << "Vvedite " << i + 1 << "-yu drob (paru chisel)\t";
-		cin >> x;
-		cin >> y;
-		CRat m(x, y);
+		cin >> num;
+		cin >> den;
+		CRat m(num, den);
 		arr[i] = m;
 
 	}
