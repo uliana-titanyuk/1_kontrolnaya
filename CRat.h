@@ -21,11 +21,11 @@ public:
 		this->num = num;
 		this->den = den;
 	};
-	int GetNum() const{
-		return num;
-	};
-	unsigned GetDen() const {
-		return den;
+//	int GetNum() const {
+//		return num;
+//	};
+//	unsigned GetDen() const {
+	//	return den;
 	};
 	CRat operator+(const CRat& b);
 	CRat operator-(const CRat& b);
